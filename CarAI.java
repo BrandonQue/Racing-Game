@@ -1,5 +1,6 @@
 import java.awt.Color;
 import java.awt.Graphics;
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class CarAI extends Car{
@@ -17,7 +18,7 @@ public class CarAI extends Car{
 	
 	Line front;
 	
-	Random rnd = new Random();
+	Random rnd = new SecureRandom();
 	
 	public CarAI() {
 		super();

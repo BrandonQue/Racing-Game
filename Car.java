@@ -1,4 +1,5 @@
 
+import java.security.SecureRandom;
 import java.util.Random;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
@@ -38,7 +39,7 @@ public class Car {
 	String place;
 	boolean finished;
 	
-	static Random rnd = new Random();
+	static Random rnd = new SecureRandom();
 	
 	static String[] pose = {"base", "left", "right", "idle", "stun"};
 	Sprite carSprite;

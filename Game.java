@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
+import java.security.SecureRandom;
 import java.util.*;
 
 public class Game extends GameBase {
@@ -55,7 +56,7 @@ public class Game extends GameBase {
 	int mx = -1000;
 	int my = -1000;
 	
-	Random rnd = new Random();
+	Random rnd = new SecureRandom();
 	
 	private Image doubleBuffer;
 	
