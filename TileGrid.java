@@ -1,4 +1,5 @@
 import java.awt.Graphics;
+import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -34,7 +35,7 @@ public class TileGrid {
 	public static final int NE = 5;
 	public static final int NW = 6;
 	
-	Random rnd = new Random();
+	Random rnd = new SecureRandom();
 	
 	public TileGrid(int tileWidth, int tileHeight) {
 		this.tileWidth = tileWidth;
